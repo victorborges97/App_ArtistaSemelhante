@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/marrom"
+    tools:context=".Recomendacoes">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Recomendações alternativas para quem gosta de:"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nome_banda"/>
+
+    <TextView
+        android:id="@+id/nome_banda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da banda escolhida"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recomendacao_um"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recomendação 1"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nome_banda" />
+
+    <TextView
+        android:id="@+id/recomendacao_dois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recomendação 2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recomendacao_um" />
+
+    <TextView
+        android:id="@+id/recomendacao_tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recomendação 3"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recomendacao_dois" />
+
+    <TextView
+        android:id="@+id/recomendacao_quatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recomendação 4"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recomendacao_tres" />
+
+    <TextView
+        android:id="@+id/recomendacao_cinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recomendação 5"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recomendacao_quatro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
