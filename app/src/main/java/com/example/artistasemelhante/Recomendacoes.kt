@@ -1,8 +1,12 @@
 package com.example.artistasemelhante
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import retrofit2.Call
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+
 
 class Recomendacoes : AppCompatActivity() {
 
@@ -22,5 +26,11 @@ class Recomendacoes : AppCompatActivity() {
         recomendacao_quatro = findViewById(R.id.recomendacao_quatro)
         recomendacao_cinco = findViewById(R.id.recomendacao_cinco)
 
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://tastedive.com/read/api")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        val artist: Artist = retrofit.create(Artist::class.java)
     }
 }
