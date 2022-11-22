@@ -32,5 +32,6 @@ class Recomendacoes : AppCompatActivity() {
             .build()
 
         val artist: Artist = retrofit.create(Artist::class.java)
+        val call: Call<List<PostArtist?>?>? = artist.getPosts("red+hot+chili+peppers%2C+pulp+fiction")
     }
 }
