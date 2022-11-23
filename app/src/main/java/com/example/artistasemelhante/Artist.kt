@@ -6,6 +6,6 @@ import retrofit2.http.Query
 
 
 interface Artist {
-    @GET("q")
+    @GET("band")
     fun getPosts(@Query("id") id: String?): Call<List<PostArtist?>?>?
 }
